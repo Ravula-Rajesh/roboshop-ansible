@@ -1,0 +1,5 @@
+- name: restart and enable mongodb
+  ansible.builtin.service:
+    name: mongod
+    state: restarted
+    enabled: yes
